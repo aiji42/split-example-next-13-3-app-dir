@@ -1,3 +1,5 @@
+const withSplit = require('next-with-split').withSplit({})
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -5,4 +7,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = withSplit(nextConfig)
